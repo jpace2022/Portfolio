@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  flex-wrap: wrap;
 }
 
 html {
@@ -28,7 +29,7 @@ header {
 #logo img {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -20px;
+  margin-top: -25px;
 }
 
 header h1 {
@@ -44,7 +45,7 @@ nav {
   background-color: var(--accent);
   text-decoration: none;
   list-style: none;
-  
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -68,6 +69,7 @@ aside {
   background-color: var(--accent);
   color: var(--text);
   text-align: right;
+  flex-wrap: wrap;
 }
 
 article {
@@ -76,7 +78,7 @@ article {
   font-size: 25px;
   text-align: center;
   position: relative;
-
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -85,10 +87,7 @@ h3 {
   position: relative;
   margin: 4px;
   margin-left: 40px;
-}
-
-.sidebar {
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .Projects {
@@ -187,11 +186,19 @@ footer header {
 @media screen and (mix-width: 768px) {
   main,
   nav,
+  .project,
+  .project-card,
+  .larger
   footer {
     flex-direction: column;
     max-width: 50%;
     flex: 0 0 50%;
   }
+
+.project {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
 }
 
 

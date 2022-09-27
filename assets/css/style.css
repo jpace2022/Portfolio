@@ -1,10 +1,11 @@
+/*primary colors used for page*/
 :root {
   --accent: rgb(43, 135, 168);
   --primary: rgb(30, 58, 131);
   --aside: rgb(129, 5, 170);
   --text: white;
 } 
-
+/*overall set up for page*/
 * {
   padding: 0;
   margin: 0;
@@ -12,12 +13,7 @@
   scroll-behavior: smooth;
   flex-wrap: wrap;
 }
-
-html {
-  font: 62.5%;
-  height: 100%;
-}
-
+/*overall layout of header*/
 header {
   background-color: var(--accent);
   background: var(--accent);
@@ -25,18 +21,20 @@ header {
   display: block;
   height: 100px;
 }
-
+/*image setting in header*/
 #logo img {
   display: flex;
   flex-wrap: wrap;
   margin-top: -25px;
 }
 
+/*Header title*/
 header h1 {
   color: var(--text);
   text-align: center;
 }
 
+/*nav bar settings*/
 nav {
   display: flex;
   justify-content: end;
@@ -48,6 +46,7 @@ nav {
   flex-wrap: wrap;
 }
 
+/*alignment of nav bar links*/
 nav a {
   color: var(--primary);
   padding: 14px 20px;
@@ -55,16 +54,19 @@ nav a {
   text-align: center;
 }
 
+/*adds hover function*/
 nav a:hover {
   background-color: var(--accent);
   color: var(--primary);
 }
 
+/*fuction for main section of page*/
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*subheader layout*/
 aside {
   background-color: var(--accent);
   color: var(--text);
@@ -72,6 +74,7 @@ aside {
   flex-wrap: wrap;
 }
 
+/*About me section header*/
 article {
   font-weight: bolder;
   color: var(--accent);
@@ -81,6 +84,7 @@ article {
   flex-wrap: wrap;
 }
 
+/*About me section*/
 h3 {
   text-align: right;
   font-size: 20px;
@@ -90,10 +94,12 @@ h3 {
   flex-wrap: wrap;
 }
 
+/*Main section of projects*/
 .Projects {
   border: 2px;
 }
 
+/*footer layout*/
 footer {
   width: 100%;
   height: 200px;
@@ -104,6 +110,7 @@ footer {
   margin-top: auto;
 }
 
+/*footer nav bar settings*/
 footer li {
   display: flex;
   justify-content: space-between;
@@ -116,10 +123,12 @@ footer li {
   list-style: none;
 }
 
+/*picture settings for main image*/
 .larger header {
   color: var(--text);
 }
 
+/*Contact me title*/
 footer header {
   color: var(--text);
   text-align: left;
@@ -128,12 +137,14 @@ footer header {
   padding: 25px;
 }
 
-.larger {
+/*border around main project*/
+.primary {
   border: solid;
   margin: 100px;
   border-radius: 35px;
 }
 
+/*smaller section of the projects links*/
 .project {
   flex: 1;
   background-color: var(--text);
@@ -144,6 +155,7 @@ footer header {
   color: var(--text);
 }
 
+/*specific settings for project cart section*/
 .project-card {
   border-style: solid;
   border-width: 1px;
@@ -154,10 +166,9 @@ footer header {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
+/*card layout*/
 .card {
   border-style: solid;
   border-width: 1px;
@@ -170,34 +181,50 @@ footer header {
   flex-wrap: wrap;
 }
 
+/*cad header layout*/
 .card header {
   padding: 20px;
 }
 
+/*project header layout*/
 .project header {
   color: var(--text);
 }
 
+/*hover settign for project links*/
 .project:hover,
 .project-card:hover {
   box-shadow: inset 0px 0px 8px var(--primary) var(--accent); 
 }
 
-@media screen and (mix-width: 768px) {
+/*overall set up for page*/
+@media screen and (max-width: 768px) {
   main,
   nav,
   .project,
   .project-card,
-  .larger
+  .primary
   footer {
     flex-direction: column;
     max-width: 50%;
     flex: 0 0 50%;
   }
+  @media screen and (max-width: 384px) {
+    main,
+    nav,
+    .project,
+    .project-card,
+    .primary
+    footer {
+      flex-direction: column;
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
 
+  /*overall set up for page*/
 .project {
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
+  flex: 0 0 33%;
+  max-width: 33%;
 }
 }
 

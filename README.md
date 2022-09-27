@@ -22,11 +22,11 @@ So that they can review samples of our work and assess whether they're a good ca
 - THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Table of Contents
--[Discription](#discription)
--[Acceptance Criteria](#acceptance-criteria)
--[Screenshot Image](#screenshot-image)
--[Finished Website](#finished-website)
--[Questions](#questions)
+- [Discription](#discription)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Screenshot Image](#screenshot-image)
+- [Finished Website](#finished-website)
+- [Questions](#questions)
 
 ## Screenshot Image
 ![Portfolio Page](https://github.com/jpace2022/Portfolio/blob/main/assets/Portfolio%20page%201.png)

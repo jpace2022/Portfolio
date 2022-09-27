@@ -29,8 +29,8 @@ So that they can review samples of our work and assess whether they're a good ca
 -[Questions](#questions)
 
 ## Screenshot Image
-![Portfolio Page](Portfolio page 1.png)
-![Portfolio Page](Portfolio page 2.png)
+![Portfolio Page](https://github.com/jpace2022/Portfolio/blob/main/assets/Portfolio%20page%201.png)
+![Portfolio Page](https://github.com/jpace2022/Portfolio/blob/main/assets/Portfolio%20page%202.png)
 
 ## Finished Website
 [Portfolio Page(https://jpace2022.github.io/Portfolio/)]

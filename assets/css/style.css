@@ -92,11 +92,14 @@ h3 {
   margin: 4px;
   margin-left: 40px;
   flex-wrap: wrap;
+  display: flex;
 }
 
 /*Main section of projects*/
 .Projects {
   border: 2px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*footer layout*/
@@ -121,11 +124,15 @@ footer li {
   position: relative;
   padding: 14px 20px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 /*picture settings for main image*/
-.larger header {
+.primary header {
   color: var(--text);
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*Contact me title*/
@@ -135,20 +142,29 @@ footer header {
   display: block;
   font-size: 25px;
   padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*border around main project*/
 .primary {
   border: solid;
   margin: 100px;
-  border-radius: 35px;
+  border-radius: 25px;
+  flex: auto;
+  background-color: var(--text);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: var(--text);
 }
 
 /*smaller section of the projects links*/
 .project {
-  flex: 1;
+  flex: auto;
   background-color: var(--text);
-  padding: 50px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -166,6 +182,7 @@ footer header {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
+  border-color: black;
 }
 
 /*card layout*/
@@ -184,11 +201,18 @@ footer header {
 /*cad header layout*/
 .card header {
   padding: 20px;
+  border-radius: 25px 25px 0px 0px;
+  margin-bottom: -10px;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*project header layout*/
 .project header {
   color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*hover settign for project links*/
@@ -208,6 +232,8 @@ footer header {
     flex-direction: column;
     max-width: 50%;
     flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (max-width: 384px) {
     main,
@@ -219,6 +245,8 @@ footer header {
       flex-direction: column;
       max-width: 50%;
       flex: 0 0 50%;
+      display: flex;
+      flex-wrap: wrap;
     }
 
   /*overall set up for page*/

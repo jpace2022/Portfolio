@@ -220,7 +220,7 @@ h2 {
   nav,
   .project,
   .project-card,
-  .primary
+  .primary,
   footer {
     flex-direction: column;
     max-width: 50%;
@@ -241,16 +241,10 @@ h2 {
       display: flex;
       flex-wrap: wrap;
     }
-
+}
   /*overall set up for page*/
 .project {
   flex: 0 0 33%;
   max-width: 33%;
 }
 }
-
-
-
-
-
-

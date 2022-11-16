@@ -12,11 +12,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   flex-wrap: wrap;
+  font-family: serif;
 }
 /*overall layout of header*/
 header {
-  background-color: var(--accent);
-  background: var(--accent);
+  background: var(--primary);
   color: var(--accent);
   display: block;
   height: 100px;
@@ -26,6 +26,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-top: -25px;
+  border-radius: 25px;
 }
 
 /*Header title*/
@@ -38,17 +39,15 @@ header h1 {
 nav {
   display: flex;
   justify-content: end;
-  text-align: right;
   color: var(--text);
-  background-color: var(--accent);
-  text-decoration: none;
+  background-color: var(--primary);
   list-style: none;
   flex-wrap: wrap;
 }
 
 /*alignment of nav bar links*/
 nav a {
-  color: var(--primary);
+  color: var(--text);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -56,8 +55,9 @@ nav a {
 
 /*adds hover function*/
 nav a:hover {
-  background-color: var(--accent);
-  color: var(--primary);
+  background-image: linear-gradient(purple, rgb(4, 4, 125));
+  color: var(--text);
+  border-radius: 25px;
 }
 
 /*fuction for main section of page*/
@@ -68,7 +68,7 @@ main {
 
 /*subheader layout*/
 aside {
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: var(--text);
   text-align: right;
   flex-wrap: wrap;
@@ -77,22 +77,11 @@ aside {
 /*About me section header*/
 article {
   font-weight: bolder;
-  color: var(--accent);
+  color: var(black);
   font-size: 25px;
   text-align: center;
   position: relative;
   flex-wrap: wrap;
-}
-
-/*About me section*/
-h3 {
-  text-align: right;
-  font-size: 20px;
-  position: relative;
-  margin: 4px;
-  margin-left: 40px;
-  flex-wrap: wrap;
-  display: flex;
 }
 
 /*Main section of projects*/
@@ -108,8 +97,8 @@ footer {
   height: 200px;
   display: flex;
   justify-content:space-between;
-  background: var(--accent);
-  color: var(--accent);
+  background: var(--primary);
+  color: var(--primary);
   margin-top: auto;
 }
 
@@ -119,7 +108,7 @@ footer li {
   justify-content: space-between;
   text-align: center;
   color: var(--text);
-  background-color: var(--accent);
+  background-color: var(--primary);
   text-decoration: none;
   position: relative;
   padding: 14px 20px;
@@ -190,7 +179,7 @@ footer header {
   border-style: solid;
   border-width: 1px;
   border-radius: 25px;
-  padding: 10px;
+ 
   flex: 0 0 300px;
   box-shadow: 10px 10px 5px var(--primary);
   margin: 20px;
@@ -200,12 +189,16 @@ footer header {
 
 /*cad header layout*/
 .card header {
-  padding: 20px;
+  padding: 10px;
   border-radius: 25px 25px 0px 0px;
   margin-bottom: -10px;
   color: var(--text);
   display: flex;
   flex-wrap: wrap;
+}
+
+h2 {
+  color: var(--text);
 }
 
 /*project header layout*/
